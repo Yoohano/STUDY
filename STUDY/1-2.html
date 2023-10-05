@@ -7,14 +7,14 @@
 <body>
 <script>
   function solution(a, b, c) {
-    // 세 변을 비교 후 return 
-    if (a + b > c && a + c > b && b + c > a) {
+    // 세 변을 비교 후 return (가장 큰 변이 작은 두 변의 합보닥 작아야함)
+    if (a < b + c && b < a + c  && c < a + b) {
       return "YES";
     } else {
       return "NO";
     }
   }
-
+  console.log(solution(13, 29, 17));
   console.log(solution(13, 33, 17));
 </script>
 </body>
