@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+           function solution(s) {
+             let answer='Yes';
+             // 문자를 전부 소문자로 변경
+             s=s.toLowerCase();
+
+             //문자를 역순으로 반환 및 합치기
+             if(s.split('').reverse().join('')!==s) return 'No';
+
+
+                return answer;
+            }
+
+            let str="gooaoog";
+            console.log(solution(str));
+        </script>
+    </body>
+</html>
